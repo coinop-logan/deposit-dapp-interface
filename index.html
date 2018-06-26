@@ -3,10 +3,13 @@
 
 if (typeof web3 !== "undefined") {
   window.web3 = new Web3(web3.currentProvider);
+  console.log("web3 loaded! Finally!");
 }
 else {
   console.log("No web3 detected! Install metamask!?");
 }
+
+
 
 contractAddress = 0x52b8C5bAB95574BB78C437047d89ceC439F39E80;
 contractABI = [
