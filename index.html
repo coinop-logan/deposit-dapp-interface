@@ -10,9 +10,9 @@ window.onload = function() {
   }
 
   //this.factoryContractInstance = web3.eth.contract(this.abis.LlmFactory).at(this.FactoryContractAddress);
-  contractInstance = web3.eth.contract(contractABI).at(contractAddress);
+  window.contractInstance = web3.eth.contract(contractABI).at(contractAddress);
 
-  console.log(contractInstance);
+  console.log(window.contractInstance);
 }
 
 contractAddress = 0x52b8C5bAB95574BB78C437047d89ceC439F39E80;
